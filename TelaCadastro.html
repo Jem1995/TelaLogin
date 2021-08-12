@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Tela Cadastro</title>
+  <link rel="stylesheet" href="./style_TelaCadastro.css">
+
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="card">
+      <h1>Tela de Cadastro</h1>
+
+      <div id="msgError"></div>
+      <div id="msgSuccess"></div>
+
+      <div class="label-float">
+        <input type="text" id="user" placeholder=" " required>
+        <label id="labelUser" for="user">User</label>
+      </div>
+
+      <div class="label-float">
+        <input type="password" id="password" placeholder=" " required>
+        <label id="labelPassword" for="password">Password</label>
+      </div>
+
+      <div class="label-float">
+        <input type="password" id="ConfirmarPassword" placeholder=" " required>
+        <label id="labelConfirmarPassword" for="ConfirmarPassword">Confirmar Password</label>
+      </div>
+
+      <div class="label-float">
+        <input type="text" id="nome" placeholder=" " required>
+        <label id="labelNome" for="nome">Nome</label>
+      </div>
+
+      <div class="label-float">
+        <input type="text" id="cidade" placeholder=" " required>
+        <label id="labelCidade" for="cidade">Cidade</label>
+      </div>
+
+      <div class="label-float">
+        <input type="email" id="email" placeholder=" " required>
+        <label id="labelEmail" for="email">Email</label>
+      </div>
+
+      <div class="justificar-centro">
+        <button onclick="cadastro()">Cadastrar</button>
+      </div>
+
+    </div>
+
+  </div>
+  <script  src="./script_TelaCadastro.js"></script>
+
+</body>
+</html>
