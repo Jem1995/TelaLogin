@@ -1,13 +1,13 @@
-let i=0 ;
+//cadastro admin
+let cadastrarAdmin = "true" ;
 let listaUser = JSON.parse(localStorage.getItem("listaUser") || "[]");
 listaUser.forEach((item) => {
   if(item.userCadastrado=="Admin"){
-    i=1;
+    cadastrarAdmin="false";
   }
 });
 
-if(i==0){
-  
+if(cadastrarAdmin=="true"){ 
     
 listaUser.push(
 {
@@ -20,6 +20,9 @@ listaUser.push(
 localStorage.setItem('listaUser',JSON.stringify(listaUser));
 
 };
+
+// usado no botão de login, verifica se todas informações estão corretas, se sim, esconde a tela de login e mostra o display de informações do usuario
+// se não, apresenta erro
 
 
 function login() {
