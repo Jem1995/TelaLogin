@@ -56,12 +56,12 @@ user.addEventListener("keyup", () => {
 password.addEventListener("keyup", () => {
   if (password.value.length <= 5) {
     labelPassword.setAttribute("style", "color: red");
-    labelPassword.innerHTML = "User *Insira no minimo 6 caracteres";
+    labelPassword.innerHTML = "Password *Insira no minimo 6 caracteres";
     password.setAttribute("style", "border-color: red");
     validPassword = false;
   } else {
     labelPassword.setAttribute("style", "color: green");
-    labelPassword.innerHTML = "User";
+    labelPassword.innerHTML = "Password";
     password.setAttribute("style", "border-color: green");
     validPassword = true;
   }
